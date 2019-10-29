@@ -19,7 +19,7 @@ in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:zippex, "~> 1.0.0-rc.1"}
+    {:zippex, "~> 1.0.0"}
   ]
 end
 ```
