@@ -4,7 +4,7 @@ defmodule Zippex.MixProject do
   def project do
     [
       app: :zippex,
-      version: "0.1.0",
+      version: "1.0.0-rc.1",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -24,7 +24,7 @@ defmodule Zippex.MixProject do
       source_url: "https://github.com/Bluetab/Zippex",
       homepage_url: "https://github.com/Bluetab/Zippex",
       docs: [
-        logo: "doc/zipper.png",
+        logo: "zipper.png",
         main: "Zippex",
         extras: ["README.md"]
       ]

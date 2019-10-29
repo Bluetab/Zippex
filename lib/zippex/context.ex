@@ -1,6 +1,6 @@
 defmodule Zippex.Context do
   @moduledoc """
-  The context of a `Zipper`. This module is used internally by Zippex and should
+  The context of a `Zippex` zipper. This module is used internally by Zippex and should
   not be accessed directly. The `Context` struct contains the following fields:
 
   * `parent` - The parent of the focus node (or nil)
@@ -11,11 +11,10 @@ defmodule Zippex.Context do
 
   """
   alias Zippex.Context
-  alias Zippex.Zipper
 
   defstruct [:parent, :ctx, left: [], right: [], dirty: false]
 
-  @type element :: Zipper.element()
+  @type element :: Zippex.element()
   @type t :: %__MODULE__{
           left: list(element),
           right: list(element),

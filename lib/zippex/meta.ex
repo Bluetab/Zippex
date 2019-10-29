@@ -1,17 +1,17 @@
 defmodule Zippex.Meta do
   @moduledoc """
-  The metadata of a `Zipper`. The `Meta` struct contains the following fields:
+  The metadata of a `Zippex` zipper. The `Meta` struct contains the following fields:
 
   * `is_branch` - A function that receives a node and returns `true` if the node is a branch
   * `children`  - A function that receives a node and returns it's children
   * `make_node` - A function that receives a node and a list of children and returns a new node
 
   """
+  alias Zippex
   alias Zippex.Meta
-  alias Zippex.Zipper, as: Zipper
 
   defstruct [:is_branch, :children, :make_node]
-  @type element :: Zipper.element()
+  @type element :: Zippex.element()
   @type is_branch_fun :: (element -> boolean)
   @type children_fun :: (element -> list(element))
   @type make_node_fun :: (element, list(element) -> element)

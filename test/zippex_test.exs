@@ -3,7 +3,7 @@ defmodule Tree do
   A list-based Rose Tree implementation.
   The head of the list is the value of the node, the tail is the list of child nodes.
   """
-  alias Zippex.Zipper
+  alias Zippex
 
   def t(value), do: [value]
   def t(value, children), do: [value | children]
@@ -13,16 +13,16 @@ defmodule Tree do
   def is_branch?([_, _ | _]), do: true
   def is_branch?(_), do: false
   def value([value | _]), do: value
-  def value(%Zipper{} = z), do: z |> Zipper.focus() |> value()
-  def zipper(tree), do: Zipper.new(&is_branch?/1, &children/1, &make_node/2, tree)
+  def value(%Zippex{} = z), do: z |> Zippex.focus() |> value()
+  def zipper(tree), do: Zippex.new(&is_branch?/1, &children/1, &make_node/2, tree)
 end
 
-defmodule Zippex.ZipperTest do
+defmodule ZippexTest do
   use ExUnit.Case
 
   import Kernel, except: [node: 1]
   import Tree, only: [value: 1, set_value: 2, t: 1, t: 2]
-  import Zippex.Zipper
+  import Zippex
 
   defp t1, do: t(1337, [t(:foo), t(:bar)])
   defp t2, do: t(2112, [t4(), t(:quuz)])

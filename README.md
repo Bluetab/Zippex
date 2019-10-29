@@ -2,8 +2,8 @@
 
 A [Zipper](https://en.wikipedia.org/wiki/Zipper_%28data_structure%29) is a
 representation of an aggregate data structure which allows it to be
-traversed and updated arbitrarily. The `Zippex.Zipper` module provides
-a generic zipper for structures with tree-like semantics.
+traversed and updated arbitrarily. The `Zippex` module provides a generic
+zipper for structures with tree-like semantics.
 
 Zippex is inspired by other zipper implementations, notably:
 
@@ -19,7 +19,7 @@ in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:zippex, "~> 0.1.0"}
+    {:zippex, "~> 1.0.0-rc.1"}
   ]
 end
 ```
@@ -27,4 +27,6 @@ end
 ## Usage
 
 The docs can be found at [https://hexdocs.pm/zippex](https://hexdocs.pm/zippex).
-Also see Zippex unit tests for usage examples.
+
+Also see Zippex [unit tests](https://github.com/Bluetab/Zippex/blob/master/test/zippex_test.exs)
+for usage examples.
