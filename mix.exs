@@ -10,6 +10,16 @@ defmodule Zippex.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
 
+      # Hex
+      description: "A Generic Zipper implementation for Elixir",
+      package: [
+        maintainers: ["Tom Crossland"],
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/Bluetab/Zippex"},
+        files:
+          ~w(.credo.exs .formatter.exs mix.exs README.md CHANGELOG.md lib)
+      ],
+
       # Docs
       name: "Zippex",
       source_url: "https://github.com/Bluetab/Zippex",
