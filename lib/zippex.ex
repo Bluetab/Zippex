@@ -10,23 +10,23 @@ defmodule Zippex do
   retrieved by calling the `focus/1` function. The following functions
   provide other information relating to the focus node:
 
-  * `lefts` - returns the left siblings of the focus node
-  * `rights` - returns the rights siblings of the focus node
-  * `path` - returns the path to the focus node from the root
+  * `lefts/1`  - returns the left siblings of the focus node
+  * `rights/1` - returns the rights siblings of the focus node
+  * `path/1`   - returns the path to the focus node from the root
 
   ## Traversal
 
   The focus can be moved using the following functions:
 
-  * `head`      - moves to the root node
-  * `down`      - moves to the first child of the focus node
-  * `up`        - moves to the parent of the focus node
-  * `left`      - moves to the left sibling of the focus node
-  * `leftmost`  - moves to the leftmost sibling of the focus node
-  * `right`     - moves to the right sibling of the focus node
-  * `rightmost` - moves to the rightmost sibling of the focus node
-  * `next`      - moves to the next node in a depth-first traversal
-  * `prev`      - moves to the previous node in a depth-first traversal
+  * `head/1`      - moves to the root node
+  * `down/1`      - moves to the first child of the focus node
+  * `up/1`        - moves to the parent of the focus node
+  * `left/1`      - moves to the left sibling of the focus node
+  * `leftmost/1`  - moves to the leftmost sibling of the focus node
+  * `right/1`     - moves to the right sibling of the focus node
+  * `rightmost/1` - moves to the rightmost sibling of the focus node
+  * `next/1`      - moves to the next node in a depth-first traversal
+  * `prev/1`      - moves to the previous node in a depth-first traversal
 
   ## Enumeration
 
