@@ -15,9 +15,7 @@ defmodule Zippex.MixProject do
       package: [
         maintainers: ["Tom Crossland"],
         licenses: ["MIT"],
-        links: %{"GitHub" => "https://github.com/Bluetab/Zippex"},
-        files:
-          ~w(.credo.exs .formatter.exs mix.exs README.md CHANGELOG.md lib)
+        links: %{"GitHub" => "https://github.com/Bluetab/Zippex"}
       ],
 
       # Docs
