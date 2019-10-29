@@ -22,6 +22,7 @@ defmodule Zippex.MixProject do
 
       # Docs
       name: "Zippex",
+      organization: "Bluetab",
       source_url: "https://github.com/Bluetab/Zippex",
       homepage_url: "https://github.com/Bluetab/Zippex",
       docs: [
